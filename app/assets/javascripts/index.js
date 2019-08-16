@@ -45,28 +45,19 @@ $(function() {
                </div>`
     return html;
   };
-<<<<<<< HEAD
-=======
 
->>>>>>> newbranch
   $(document).on("click",".user-search-add", function() {
     $input = $(this);
     var add_user_html = clickHTML($input);
     $("#search-users").append(add_user_html);
-<<<<<<< HEAD
-=======
 
->>>>>>> newbranch
     $input.parent()[0].remove();
   });
 
   $(document).on("click",".user-search-remove", function() {
     $input = $(this);
     $input.parent().remove();
-<<<<<<< HEAD
 
-=======
->>>>>>> newbranch
   });
 
   
@@ -92,11 +83,7 @@ $(function() {
                 `
     return html;
   };
-<<<<<<< HEAD
-=======
 
-
->>>>>>> newbranch
   if (window.location.href.match(/\/groups\/\d+\/messages/)){
        setInterval(autoUpdate,8000)
   };
@@ -124,10 +111,5 @@ $(function() {
       alert('通信に失敗しました');
     });
   };
-<<<<<<< HEAD
-
 });
 
-=======
-});
->>>>>>> newbranch

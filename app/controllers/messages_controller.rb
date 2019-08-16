@@ -26,14 +26,9 @@ class MessagesController < ApplicationController
     params.require(:message).permit(:content, :image).merge(user_id: current_user.id)
   end
 
-<<<<<<< HEAD
     def set_group
       @group = Group.find(params[:group_id])
       Time.zone ='Tokyo'
     end
-=======
-  def set_group
-    @group = Group.find(params[:group_id])
-  end
->>>>>>> newbranch
+
 end
