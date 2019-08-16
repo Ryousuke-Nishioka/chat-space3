@@ -85,7 +85,7 @@ $(function() {
   };
 
   if (window.location.href.match(/\/groups\/\d+\/messages/)){
-       setInterval(autoUpdate,8000)
+       setInterval(autoUpdate,5000)
   };
 
     function autoUpdate() {
