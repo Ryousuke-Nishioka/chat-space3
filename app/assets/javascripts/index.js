@@ -57,6 +57,7 @@ $(function() {
   $(document).on("click",".user-search-remove", function() {
     $input = $(this);
     $input.parent().remove();
+
   });
 
   
@@ -83,12 +84,11 @@ $(function() {
     return html;
   };
 
-
   if (window.location.href.match(/\/groups\/\d+\/messages/)){
        setInterval(autoUpdate,8000)
   };
 
-  function autoUpdate() {
+    function autoUpdate() {
     var href = window.location.href;
     var lastId = $('.message').last().attr('data-messageid');
 
@@ -112,3 +112,4 @@ $(function() {
     });
   };
 });
+
