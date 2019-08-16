@@ -34,10 +34,7 @@ $(function() {
     .fail(function(){
       alert('通信に失敗しました');
     });
-
   });
-
-
 
   function clickHTML(user){
     var userId = user.data("user-id");
@@ -48,20 +45,31 @@ $(function() {
                </div>`
     return html;
   };
+<<<<<<< HEAD
+=======
+
+>>>>>>> newbranch
   $(document).on("click",".user-search-add", function() {
     $input = $(this);
     var add_user_html = clickHTML($input);
     $("#search-users").append(add_user_html);
+<<<<<<< HEAD
+=======
+
+>>>>>>> newbranch
     $input.parent()[0].remove();
   });
 
   $(document).on("click",".user-search-remove", function() {
-
     $input = $(this);
     $input.parent().remove();
+<<<<<<< HEAD
 
+=======
+>>>>>>> newbranch
   });
 
+  
   function addNewMessagesHTML(comment){
     var imagehtml = comment.image == null ? "" : `<img src="${comment.image}" class="lower-message__image">`
     var html = `
@@ -74,7 +82,7 @@ $(function() {
                      ${comment.date}
                      </div>
                    </div>
-                   <div class = "lower-message">
+                   <div class = "ower-message__image">
                      <p class="lower-message__content">
                      ${comment.content}
                      </p>
@@ -84,8 +92,13 @@ $(function() {
                 `
     return html;
   };
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> newbranch
   if (window.location.href.match(/\/groups\/\d+\/messages/)){
-       setInterval(autoUpdate,50000)
+       setInterval(autoUpdate,8000)
   };
 
     function autoUpdate() {
@@ -108,9 +121,13 @@ $(function() {
        });
     })
     .fail(function(){
-      alert('メッセージの取得に失敗しました');
+      alert('通信に失敗しました');
     });
   };
+<<<<<<< HEAD
 
 });
 
+=======
+});
+>>>>>>> newbranch

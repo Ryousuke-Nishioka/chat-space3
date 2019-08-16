@@ -14,8 +14,13 @@ module ChatSpace
       g.helper false
       g.test_framework false
     end
+<<<<<<< HEAD
 
       config.time_zone = 'Tokyo'
       config.i18n.default_locale = :ja
+=======
+    config.time_zone = 'Tokyo'
+    config.i18n.default_locale = :ja
+>>>>>>> newbranch
     end
   end
