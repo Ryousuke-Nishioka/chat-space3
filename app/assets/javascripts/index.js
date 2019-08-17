@@ -31,6 +31,7 @@ $(function() {
       }
     })
 
+
     .fail(function(){
       alert('通信に失敗しました');
     });
@@ -85,7 +86,7 @@ $(function() {
   };
 
   if (window.location.href.match(/\/groups\/\d+\/messages/)){
-       setInterval(autoUpdate,5000)
+       setInterval(autoUpdate,50000)
   };
 
     function autoUpdate() {
