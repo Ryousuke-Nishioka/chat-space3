@@ -36,7 +36,7 @@ $(function(){
     })
     .done(function(data){
     
-      if (data.content === nil){
+      if (data.content == ""){
 
       alert('error');
       $( ".form__submit").prop( "disabled", false );
