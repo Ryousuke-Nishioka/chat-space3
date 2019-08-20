@@ -27,6 +27,7 @@ $(function() {
         users.forEach(function(user){
           var html = appendUser(user);
           $(".user-search-result").append(html);
+
         });
       }
     })
@@ -46,6 +47,13 @@ $(function() {
                </div>`
     return html;
   };
+
+  $(function(){
+    $("#chat-group-users").on("click",".user-search-remove" ,function(){
+      $(this).parent().remove();
+    })
+  })
+  
 
   $(document).on("click",".user-search-add", function() {
     $input = $(this);
@@ -86,7 +94,7 @@ $(function() {
   };
 
   if (window.location.href.match(/\/groups\/\d+\/messages/)){
-       setInterval(autoUpdate,8000)
+       setInterval(autoUpdate,5000)
   };
 
     function autoUpdate() {
@@ -105,6 +113,7 @@ $(function() {
            var html = addNewMessagesHTML(message);
            $('.messages').append(html);
            $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
+
          };
        });
     })
@@ -113,4 +122,5 @@ $(function() {
     });
   };
 });
+
 
